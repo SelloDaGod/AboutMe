@@ -50,3 +50,12 @@ function MyFunction6(){
    let answer = prompt("Name?") 
    alert("Thank you for getting to know me " + answer)
 }
+
+function MyFunction7(){
+    let answer = prompt("Answer")
+    while(answer != 7){
+        if(answer < 7){
+            alert("Your answer is too low!")
+        }
+    }
+}
