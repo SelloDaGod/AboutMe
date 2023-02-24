@@ -46,16 +46,23 @@ function MyFunction5() {
 
     }
 }
-function MyFunction6(){
-   let answer = prompt("Name?") 
-   alert("Thank you for getting to know me " + answer)
+function MyFunction6() {
+    let answer = prompt("Name?")
+    alert("Thank you for getting to know me " + answer)
 }
 
-function MyFunction7(){
-    let answer = prompt("Answer")
-    while(answer != 7){
-        if(answer < 7){
-            alert("Your answer is too low!")
+function MyFunction7() {
+    number = prompt("Guess a number between 1 and 10")
+
+    while (number != 7) {
+        if (number < 7) {
+            alert("Your answer is too low! Try again")
+            number = prompt("Please guess number again!");
+        } else if (number > 7) {
+            alert("Your number is too high! Try again!");
+            number = prompt("Please guess again");
         }
     }
+    alert("You are correct!")
 }
+
