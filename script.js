@@ -1,49 +1,66 @@
 function MyFunction1() {
-    let answer = prompt("Answer1");  
-    if (answer == "yes") {
-        alert("Correct!")
-    } else {
-        alert("Incorrect!");
-        prompt("Try Again"); 
+    let answer = "";
+    for (let i = 0; i < 6; i++) {
+        answer = prompt("Answer1");
+        if (answer === "yes") {
+            alert("Correct!");
+           console.log(answer); 
+           break;
+        } else if (answer === "no") {
+            alert("Incorrect!");
+        }
     }
 }
 function MyFunction2() {
-    let answer = prompt("Answer2")
-    if (answer == "yes") {
-        alert("Correct!")
-    } else {
-        alert("Incorrect!")
-
+    let answer = "";
+    for (let i = 0; i < 6; i++) {
+        answer = prompt("Answer1");
+        if (answer === "yes") {
+            alert("Correct!");
+           console.log(answer); 
+           break;
+        } else if (answer === "no") {
+            alert("Incorrect!");
+        }
     }
 }
 function MyFunction3() {
-    let answer = prompt("Answer3")
-    if (answer == "no") {
-        alert("Correct")
-
-    } else {
-        alert("Incorrect!")
-
+    let answer = "";
+    for (let i = 0; i < 6; i++) {
+        answer = prompt("Answer1");
+        if (answer === "no") {
+            alert("Correct!");
+           console.log(answer); 
+           break;
+        } else if (answer === "yes") {
+            alert("Incorrect!");
+        }
     }
 }
 function MyFunction4() {
-    let answer = prompt("Answer4")
-    if (answer == "no") {
-        alert("Correct!")
-
-    } else {
-        alert("Incorrect!")
-
+    let answer = "";
+    for (let i = 0; i < 6; i++) {
+        answer = prompt("Answer1");
+        if (answer === "no") {
+            alert("Correct!");
+           console.log(answer); 
+           break;
+        } else if (answer === "yes") {
+            alert("Incorrect!");
+        }
     }
 }
 function MyFunction5() {
-    let answer = prompt("Answer5")
-    if (answer == "yes") {
-        alert("Correct!")
-
-    } else {
-        alert("Incorrect")
-
+    let answer = "";
+    for (let i = 0; i < 6; i++) {
+        answer = prompt("Answer1");
+        if (answer === "yes") {
+            alert("Correct!");
+           console.log(answer); 
+           break;
+        } else if (answer === "no") {
+            alert("Incorrect!");
+        }
     }
 }
 function MyFunction0() {
@@ -55,8 +72,7 @@ function MyFunction0() {
 
 function MyFunction6() {
     number = prompt("Guess a number between 1 and 10")
-
-    while (number != 7) {
+    for (let i = 0; i < 6; i++) {
         if (number < 7) {
             alert("Your answer is too low! Try again")
             number = prompt("Please guess number again!");
@@ -68,7 +84,7 @@ function MyFunction6() {
     alert("You are correct!")
 }
 
-const array = ["A. $uicide Boy$", " B. Polo G", " C. Geto Boys", " D. Mac Miller", "                 Select All that apply! (Format: answer,answer)"];
+const array = ["A. $uicide Boy$", " B. Polo G", " C. Geto Boys", " D. Mac Miller", " Select All that apply! (Format: answer,answer)"];
 const list = document.getElementById("list");
 
 list.addEventListener("click", function () {
@@ -76,12 +92,13 @@ list.addEventListener("click", function () {
 })
 
 function MyFunction7() {
-    let answer = prompt("Who are my favorite artist?");
-    if (answer == "A,D" || answer == "a,d" || answer == "d,a" || answer == "D,A" || answer == "A,d" || answer == "D,a" || answer == "a,D" || answer == "d,A") {
+    let answer = prompt("Who are my favorite artist?")
+    for (let i = 0; i < 6; i++){
+    if (answer.toLowerCase() == "a,d" || answer.toLowerCase() == "d,a") {
         alert("You are correct!");
         document.getElementById("answer").innerHTML += answer;
         ;
     } else {
         alert("Incorrect!");
-    }
+    }}
 }
