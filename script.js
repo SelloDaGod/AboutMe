@@ -1,10 +1,10 @@
 function MyFunction1() {
-    let answer = prompt("Answer1")
+    let answer = prompt("Answer1");  
     if (answer == "yes") {
         alert("Correct!")
     } else {
-        alert("Incorrect!")
-
+        alert("Incorrect!");
+        prompt("Try Again"); 
     }
 }
 function MyFunction2() {
@@ -46,12 +46,14 @@ function MyFunction5() {
 
     }
 }
-function MyFunction6() {
+function MyFunction0() {
     let answer = prompt("Name?")
     alert("Thank you for getting to know me " + answer)
 }
 
-function MyFunction7() {
+
+
+function MyFunction6() {
     number = prompt("Guess a number between 1 and 10")
 
     while (number != 7) {
@@ -66,3 +68,20 @@ function MyFunction7() {
     alert("You are correct!")
 }
 
+const array = ["A. $uicide Boy$", " B. Polo G", " C. Geto Boys", " D. Mac Miller", "                 Select All that apply! (Format: answer,answer)"];
+const list = document.getElementById("list");
+
+list.addEventListener("click", function () {
+    alert("Answer Choices: " + array);
+})
+
+function MyFunction7() {
+    let answer = prompt("Who are my favorite artist?");
+    if (answer == "A,D" || answer == "a,d" || answer == "d,a" || answer == "D,A" || answer == "A,d" || answer == "D,a" || answer == "a,D" || answer == "d,A") {
+        alert("You are correct!");
+        document.getElementById("answer").innerHTML += answer;
+        ;
+    } else {
+        alert("Incorrect!");
+    }
+}
